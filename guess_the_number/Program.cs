@@ -4,48 +4,67 @@ public class Program
 {
     public static void Main()
     {
-
         Random random = new Random();
-        int randomNumber = random.Next(1, 101);
-        int userGuess;
-        int numGuesses = 0;
-
-        Console.WriteLine("Bienvenue");
+        bool playAgain;
 
         do
         {
-            Console.Write("Veuillez entrer un nombre entre 1 et 100 : ");
-            string userInput = Console.ReadLine();
+            playAgain = false;
+            int randomNumber = random.Next(1, 101);
+            int userGuess;
+            int numGuesses = 0;
 
-            if (int.TryParse(userInput, out userGuess))
+            Console.WriteLine("Bienvenue");
+
+            do
             {
-                numGuesses++;
+                Console.Write("Veuillez entrer un nombre entre 1 et 100 : ");
+                string userInput = Console.ReadLine();
 
-                if (userGuess < randomNumber)
+                if (int.TryParse(userInput, out userGuess))
                 {
-                    Console.WriteLine("Le nombre à deviner est plus grand");
-                }
+                    if (userGuess < 1 || userGuess > 100)
+                    {
+                        Console.WriteLine("Le nombre doit etre compris entre 1 et 100.");
+                    }
+                    else
+                    {
+                        numGuesses++;
 
-                else if (userGuess > randomNumber)
-                {
-                    Console.WriteLine("Le nombre à deviner est plus petit");
+                        if (userGuess < randomNumber)
+                        {
+                            Console.WriteLine("Le nombre à deviner est plus grand.");
+                        }
+                        else if (userGuess > randomNumber)
+                        {
+                            Console.WriteLine("Le nombre à deviner est plus petit.");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Félicitation ! Vous avez deviné le nombre correctement en {numGuesses} coup.");
+                        }
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("Félicitation ! Vous avez deviné le nombre correctement en " + numGuesses + "coups.");
+                    Console.WriteLine("Veuillez entrer un nombre valide.");
                 }
 
-            }
-            else
+            } while (userGuess != randomNumber);
+
+            Console.Write("Voulez-vous jouer à nouveau ? (Oui / Non) : ");
+            string playAgainInput = Console.ReadLine();
+            if (playAgainInput.Equals("Oui", StringComparison.OrdinalIgnoreCase))
             {
-                Console.WriteLine("Veuillez entrer un nombre valide.");
+                playAgain = true;
+                Console.Clear();
             }
 
-        } while (userGuess != randomNumber);
+
+        } while (playAgain);
 
         Console.WriteLine("Merci d'avoir joué !");
-        while (randomNumber != 1) { } // Pour eviter que l'application se ferme quand je trouve le numero à deviner.
-
+        Console.ReadLine();
     }
 }
 

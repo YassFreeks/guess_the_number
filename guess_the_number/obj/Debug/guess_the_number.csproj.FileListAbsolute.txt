@@ -6,3 +6,11 @@ C:\Users\yasso\Desktop\Website\Formation_dot_net\projet_cs\guess_the_number\gues
 C:\Users\yasso\Desktop\Website\Formation_dot_net\projet_cs\guess_the_number\guess_the_number\obj\Debug\guess_the_number.csproj.CoreCompileInputs.cache
 C:\Users\yasso\Desktop\Website\Formation_dot_net\projet_cs\guess_the_number\guess_the_number\obj\Debug\guess_the_number.exe
 C:\Users\yasso\Desktop\Website\Formation_dot_net\projet_cs\guess_the_number\guess_the_number\obj\Debug\guess_the_number.pdb
+C:\Users\yasso\Desktop\Website\Formation_dot_net\guess_the_number\guess_the_number\obj\Debug\guess_the_number.csproj.AssemblyReference.cache
+C:\Users\yasso\Desktop\Website\Formation_dot_net\guess_the_number\guess_the_number\obj\Debug\guess_the_number.csproj.SuggestedBindingRedirects.cache
+C:\Users\yasso\Desktop\Website\Formation_dot_net\guess_the_number\guess_the_number\obj\Debug\guess_the_number.csproj.CoreCompileInputs.cache
+C:\Users\yasso\Desktop\Website\Formation_dot_net\guess_the_number\guess_the_number\obj\Debug\guess_the_number.exe
+C:\Users\yasso\Desktop\Website\Formation_dot_net\guess_the_number\guess_the_number\obj\Debug\guess_the_number.pdb
+C:\Users\yasso\Desktop\Website\Formation_dot_net\guess_the_number\guess_the_number\bin\Debug\guess_the_number.exe.config
+C:\Users\yasso\Desktop\Website\Formation_dot_net\guess_the_number\guess_the_number\bin\Debug\guess_the_number.exe
+C:\Users\yasso\Desktop\Website\Formation_dot_net\guess_the_number\guess_the_number\bin\Debug\guess_the_number.pdb
